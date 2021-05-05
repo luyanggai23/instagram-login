@@ -36,3 +36,88 @@
     transform: rotate(360deg);
   }
 }
+
+html, body, #root {
+  height: 100%;
+}
+
+#root, article, div, footer, header, main, nav, section {
+  -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    border: 0 solid #000;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body, button, input, textarea {
+  color: #262626;
+  color: rgba(var(--i1d,38,38,38),1);
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.coreSpriteActivityHeart, .coreSpriteAddText, .coreSpriteAppIcon, .coreSpriteAppStoreButton, .coreSpriteBoomerang, .coreSpriteCall, .coreSpriteCheck, .coreSpriteChevronDark, .coreSpriteChevronDownGrey, .coreSpriteChevronRight, .coreSpriteChevronRightBlue, .coreSpriteChevronRightBlue-3x, .coreSpriteChevronRightBlue-4x, .coreSpriteCi, .coreSpriteClose, .coreSpriteCloseLight, .coreSpriteDesktopNavDirect, .coreSpriteDesktopPhotoGrid, .coreSpriteDesktopPhotoGridActive, .coreSpriteDesktopProfileIGTV, .coreSpriteDesktopProfileIGTVActive, .coreSpriteDesktopProfileSave, .coreSpriteDesktopProfileSaveActive, .coreSpriteDesktopProfileTagged, .coreSpriteDesktopProfileTaggedActive, .coreSpriteDirectHeart, .coreSpriteDismissLarge, .coreSpriteDismissSmall, .coreSpriteDownload, .coreSpriteDropdownArrowBlue5, .coreSpriteDropdownArrowBlue6, .coreSpriteDropdownArrowGrey9, .coreSpriteDropdownArrowWhite, .coreSpriteFacebookIcon, .coreSpriteFacebookIconInverted, .coreSpriteFeedLikeBig, .coreSpriteGallery, .coreSpriteGlyphGradient, .coreSpriteGlyphWhite, .coreSpriteGooglePlayButton, .coreSpriteHashtag, .coreSpriteHeartSmall, .coreSpriteHyperlapse, .coreSpriteIgLiteHalfsheetInstagramLogo, .coreSpriteInfo, .coreSpriteInputAccepted, .coreSpriteInputError, .coreSpriteInputRefresh, .coreSpriteKeyhole, .coreSpriteLeftChevron, .coreSpriteLeftPaginationArrow, .coreSpriteLocation, .coreSpriteLocationActive, .coreSpriteLock, .coreSpriteLockSmall, .coreSpriteLoggedOutGenericUpsell, .coreSpriteLoggedOutWordmark, .coreSpriteMobileNavDirect, .coreSpriteMobileNavTypeLogo, .coreSpriteNavBack, .coreSpriteNotificationLeftChevron, .coreSpriteNotificationRightChevron, .coreSpriteOptionsEllipsis, .coreSpriteOptionsEllipsisLight, .coreSpritePagingChevron, .coreSpritePlayIconSmall, .coreSpritePrivateLock, .coreSpriteProfileCamera, .coreSpriteReload, .coreSpriteRightChevron, .coreSpriteRightPaginationArrow, .coreSpriteSaveNull, .coreSpriteSaveStory, .coreSpriteSearchClear, .coreSpriteSearchIcon, .coreSpriteSensitivityIcon, .coreSpriteSensitivityIconSmall, .coreSpriteSpeechBubbleSmall, .coreSpriteSpinsta, .coreSpriteSpinstaNux, .coreSpriteSpinstaStory, .coreSpriteStar, .coreSpriteStoryCreation, .coreSpriteStoryCreationAlt, .coreSpriteStoryRing, .coreSpriteStoryViewCount, .coreSpriteTaggedNull, .coreSpriteUnreadComments, .coreSpriteUnreadLikes, .coreSpriteUnreadRelationships, .coreSpriteUnreadUsertags, .coreSpriteVerifiedBadge, .coreSpriteVerifiedBadgeSmall, .coreSpriteVideoNux, .coreSpriteViewCount, .coreSpriteWindowsStoreButton {
+  background-image: url(./resources/instagram-sprites.png);
+}
+
+.coreSpriteLoggedOutWordmark {
+  margin: 22px auto 12px;
+  background-size: 440px 411px;
+  background-position: 0 -129px;
+  background-repeat: no-repeat;
+  height: 51px;
+  width: 175px;
+}
+
+.coreSpriteFacebookIconInverted {
+    background-size: 440px 411px;
+    background-position: -364px -329px;
+    background-repeat: no-repeat;
+    /* background-position: -414px -259px; */
+    height: 16px;
+    width: 16px;
+}
+
+body, button, input, textarea {
+  color: #262626;
+  color: rgba(var(--i1d,38,38,38),1);
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
