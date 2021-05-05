@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 import FloatingLabelInput from './FloatingLabelInput'
 import { signUpUser } from './../utils/db-utils'
-import { EMAIL_REGEX, PHONE_NUMBER_REGEX } from './../app-constants'
 import { 
   OuterContainer, 
   Container, 
@@ -49,7 +48,7 @@ export default function SignUp({ setToken }) {
     }
 
     try {
-      const signUpUserResponse = await signUpUser(user);
+      await signUpUser(user);
       setToken(user);
       history.push('/');
     } catch (ex) {
@@ -78,7 +77,7 @@ export default function SignUp({ setToken }) {
                 <FloatingLabelInput label='Password' type='password' value={password} onChange={setPassword}/>
                 <div>
                   <LoginWithFacebookContainer>
-                    <SignUpButton type='submit' disabled={signUpButtonDisabled()} onClick={signUpClicked} type='button'>
+                    <SignUpButton disabled={signUpButtonDisabled()} onClick={signUpClicked} type='button'>
                       Sign Up
                     </SignUpButton>
                   </LoginWithFacebookContainer>

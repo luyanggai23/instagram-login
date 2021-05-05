@@ -9,7 +9,6 @@ db.defaults({ users: [] })
   .write()
 
 export const signUpUser = (user) => {
-  const { userName } = user
   const userExists = checkIfIGUserExists(user)
 
   if (userExists) {
@@ -18,11 +17,17 @@ export const signUpUser = (user) => {
       message: 'User already exists'
     });
   } else {
-    saveIGUser(user)
-    return Promise.resolve({
-      success: true,
-      user: user
-    })
+    try {
+      saveIGUser(user)
+      return Promise.resolve({
+        success: true,
+        user: user
+      })
+    } catch (ex) {
+      return Promise.reject({
+        success: false
+      })
+    }
   }
 }
 
@@ -44,5 +49,5 @@ const checkIfIGUserExists = (user) => {
 }
 
 const saveIGUser = (user) => {
-  const value = db.get('users').push(user).write()
+  return db.get('users').push(user).write()
 }
